@@ -31,8 +31,8 @@ export default {
     },
     SET_PRODUCTSSPORT: (state, products) => {
         products.forEach(item => {
-            if (item.type == "sport") {
-                state.productsSport.push(item)
+            if (item.type == "kids") {
+                state.productsKids.push(item)
             }
         })
     }

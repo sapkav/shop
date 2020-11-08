@@ -6,6 +6,6 @@ export default {
       return state.busket
   },
   PRODUCTSSPORT(state) {
-    return state.productsSport
+    return state.productsKids
   }
 }

@@ -5,8 +5,9 @@
              <nav><router-link to="/">logo</router-link></nav>
          </div>
          <div class="main-wrapper-header-links">
-             <nav><router-link :to="'kids'">Kids Socks</router-link>
-             <router-link :to="'busket'">Busket</router-link>
+             <nav>
+             <router-link :to="'kids'" class="main-wrapper-header-links-link">KidsSocks</router-link>
+             <router-link :to="'men'" class="main-wrapper-header-links-link">MenSocks</router-link>
              </nav>
          </div>
         <div class="main-wrapper-header-logo">
@@ -40,7 +41,6 @@ computed: {
 
 <style lang="scss">
 .main-wrapper {
-
     &-header {
         z-index: 1;
         display: grid;
@@ -62,6 +62,10 @@ computed: {
                     color: red;
                     transform: scale(1.2);
                 }
+            }
+
+            &-link {
+                padding-right: 20px;
             }
         }
     }

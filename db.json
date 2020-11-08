@@ -1,8 +1,8 @@
 {
     "products": [
       {
-        "image": "1.jpg",
-        "type" : "sport",
+        "image": "kids1.jpg",
+        "type" : "kids",
         "name": "T-shirt 1",
         "price": 2100,
         "article": "T1",
@@ -10,8 +10,8 @@
         "category": "Мужские"
       },
       {
-        "image": "2.jpg",
-        "type" : "sport",
+        "image": "kids2.jpg",
+        "type" : "kids",
         "name": "T-shirt 2",
         "price": 3150,
         "article": "T2",
@@ -19,8 +19,8 @@
         "category": "Женские"
       },
       {
-        "image": "3.jpg",
-        "type" : "sport",
+        "image": "kids3.jpg",
+        "type" : "kids",
         "name": "T-shirt 3",
         "price": 4200,
         "article": "T3",
@@ -28,8 +28,8 @@
         "category": "Женские"
       },
       {
-        "image": "4.jpg",
-        "type" : "sport",
+        "image": "kids4.jpg",
+        "type" : "kids",
         "name": "T-shirt 4",
         "price": 5300,
         "article": "T4",
@@ -37,8 +37,8 @@
         "category": "Мужские"
       },
       {
-        "image": "5.jpg",
-        "type" : "short",
+        "image": "kids5.jpg",
+        "type" : "kids",
         "name": "T-shirt 5",
         "price": 6500,
         "article": "T5",
@@ -46,13 +46,67 @@
         "category": "Женские"
       },
       {
-        "image": "6.jpg",
-        "type" : "short",
+        "image": "kids6.jpg",
+        "type" : "kids",
         "name": "T-shirt 6",
         "price": 8700,
         "article": "T6",
         "available": true,
         "category": "Женские"
+      },
+      {
+        "image": "kids7.jpg",
+        "type" : "kids",
+        "name": "T-shirt 1",
+        "price": 2100,
+        "article": "T1",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "kids8.jpg",
+        "type" : "kids",
+        "name": "T-shirt 1",
+        "price": 2100,
+        "article": "T1",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "kids9.jpg",
+        "type" : "kids",
+        "name": "T-shirt 1",
+        "price": 2100,
+        "article": "T1",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "kids10.jpg",
+        "type" : "kids",
+        "name": "T-shirt 1",
+        "price": 2100,
+        "article": "T1",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "kids11.jpg",
+        "type" : "kids",
+        "name": "T-shirt 1",
+        "price": 2100,
+        "article": "T1",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "kids12.jpg",
+        "type" : "kids",
+        "name": "T-shirt 1",
+        "price": 2100,
+        "article": "T1",
+        "available": true,
+        "category": "Мужские"
       }
     ]
   }

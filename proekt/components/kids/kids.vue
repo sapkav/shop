@@ -1,11 +1,11 @@
 <template> 
-<div class="kid">
+<div class="kid"  style="background-image: url(img/kids-back.jpg)">
  <!-- <router-link :to="{ name: 'busket', params: { busket_data: BUSKET }}">
     <div class="kid-link-busket">
       Количество: {{BUSKET.length}}
       </div>
     </router-link> -->
-    <h1 class="kid-title">Catalog {{BUSKET.length}}</h1>
+    <h1 class="kid-title">Детские носки</h1>
     <div class="kid-list">
         <kids-item
           v-for = "product in PRODUCTSSPORT"
@@ -63,8 +63,12 @@ export default {
 .kid {
 
   &-title {
-    text-align: center;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 30px;
     font-size: 40px;
+    text-align: center;
+    padding-top: 0;
   }
 
  &-list {

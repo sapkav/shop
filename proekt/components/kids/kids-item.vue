@@ -1,6 +1,6 @@
 <template> 
 <div class="kids-item">
-    <img :src="'../img/' + product_data.image" alt="img" class="kids-item-image">
+    <img :src="'../img/kids/' + product_data.image" alt="img" class="kids-item-image">
     <h3 class="kids-item-number">{{product_data.name}}</h3>
     <p class="kids-item-price">Price: {{product_data.price}}</p>
     <button class="kids-item-button btn"
@@ -39,6 +39,7 @@ export default {
 
 <style lang="scss">
 .kids-item {
+    background-color: white;
     border: 1px solid white;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     padding: 30px;

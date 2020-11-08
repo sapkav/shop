@@ -1,10 +1,10 @@
 <template> 
 <div class="tables">
-  <router-link :to="{ name: 'busket', params: { busket_data: BUSKET }}">
+ <!-- <router-link :to="{ name: 'busket', params: { busket_data: BUSKET }}">
     <div class="tables-link-busket">
       Количество: {{BUSKET.length}}
       </div>
-    </router-link>
+    </router-link> -->
     <h1 class="tables-title">Catalog {{BUSKET.length}}</h1>
     <div class="tables-list">
         <table-item
@@ -72,7 +72,7 @@ export default {
      grid-template-columns: repeat(4 ,1fr);
      justify-items: center;
  }
-
+/*
  &-link-busket {
    position: absolute;
    padding: 20px;
@@ -89,6 +89,6 @@ export default {
      transform: scale(1.1);
      color: red;
    }
- }
+ } */
 }
 </style>

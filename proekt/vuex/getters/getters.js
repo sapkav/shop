@@ -5,7 +5,10 @@ export default {
     BUSKET(state) {
       return state.busket
   },
-  PRODUCTSSPORT(state) {
+  PRODUCTSKIDS(state) {
     return state.productsKids
+  },
+  PRODUCTSMEN(state) {
+    return state.productsMen
   }
 }

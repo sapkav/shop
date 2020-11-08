@@ -17,7 +17,8 @@ let store = new Vuex.Store({
   state: {
       products: [],
       busket: [],
-      productsKids: []
+      productsKids: [],
+      productsMen: []
   },
   mutations,
   actions,

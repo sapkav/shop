@@ -8,7 +8,7 @@
     <h1 class="kid-title">Детские носки</h1>
     <div class="kid-list">
         <kids-item
-          v-for = "product in PRODUCTSSPORT"
+          v-for = "product in PRODUCTSKIDS"
           :key = "product.article"
           :product_data="product"
           @addToCart = 'addToCart'>
@@ -30,7 +30,7 @@ export default {
     },
     computed:{
       ...mapGetters([
-        'PRODUCTSSPORT',
+        'PRODUCTSKIDS',
         'BUSKET'
       ])
     },
@@ -39,8 +39,8 @@ export default {
         this.ADD_TO_BUSKET(data)
       },
       ...mapActions([
-        'GET_PRODUCTS',
-         'ADD_TO_BUSKET'
+         'ADD_TO_BUSKET',
+         'GET_PRODUCTSKIDS'
       ]),
         },
     data() {
@@ -49,12 +49,7 @@ export default {
         }
     },
     mounted() {
-      this.GET_PRODUCTS()
-      .then(response => {
-        if(response.data) {
-          console.log('data arrived')
-        }
-      })
+      this.GET_PRODUCTSKIDS()
     },
 }
 </script>

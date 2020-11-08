@@ -48,12 +48,13 @@ computed: {
         top: 0;
         grid-template-columns: 1fr 4fr 1fr;  
         justify-items: center;
-        background-color: rgba(97, 100, 233, 0.9);
+        background-color: rgba(48, 50, 95, 0.9);
         padding-top: 14px;
         padding-bottom: 14px;
 
         &-links {
             a {
+                color: white;
                 text-decoration: none;
                 transition: all .5s ease-in-out;
                 font-size: 20px;

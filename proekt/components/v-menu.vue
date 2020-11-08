@@ -5,8 +5,23 @@
 </template>
 
 <script>
-export default {
+import {mapActions} from 'vuex'
 
+export default {
+    name: 'main-menu',
+    data() {
+      return {
+    
+      }
+    },
+    methods: {
+     ...mapActions([
+        'GET_PRODUCTS',
+      ]),
+    },
+    mounted() {
+      this.GET_PRODUCTS()
+    }
 }
 </script>
 

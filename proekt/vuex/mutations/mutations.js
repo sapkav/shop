@@ -29,11 +29,18 @@ export default {
             state.busket[index].quantity--;
         }
     },
-    SET_PRODUCTSSPORT: (state, products) => {
-        products.forEach(item => {
-            if (item.type == "kids") {
-                state.productsKids.push(item)
+    SET_PRODUCTSKIDS: (state) => {
+        for (let i = 0; i < state.products.length ; i++) {
+            if (state.products[i].type == 'kids') {
+                state.productsKids.push(state.products[i])
             }
-        })
-    }
+        }
+    },
+    SET_PRODUCTSMEN: (state) => {
+        for (let i = 0; i < state.products.length ; i++) {
+            if (state.products[i].type == 'men') {
+                state.productsMen.push(state.products[i])
+            }
+        }
+    },
 }

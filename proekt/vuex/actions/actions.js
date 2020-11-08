@@ -1,5 +1,3 @@
-
-
 export default {
      ADD_TO_BUSKET({commit}, product) {
          commit('SET_BUSKET', product)
@@ -13,4 +11,10 @@ export default {
    DECREMENT_ITEM({commit}, index) {
        commit('DECREMENT', index)
    },
+   GET_PRODUCTSKIDS({commit}) {
+    commit('SET_PRODUCTSKIDS')
+   },
+   GET_PRODUCTSMEN({commit}) {
+    commit('SET_PRODUCTSMEN')
+   }
 }

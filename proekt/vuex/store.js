@@ -16,7 +16,8 @@ Vue.use(Vuex);
 let store = new Vuex.Store({
   state: {
       products: [],
-      busket: []
+      busket: [],
+      productsSport: []
   },
   mutations,
   actions,

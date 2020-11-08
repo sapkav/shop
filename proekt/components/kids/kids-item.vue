@@ -1,9 +1,9 @@
 <template> 
-<div class="table-item">
-    <img :src="'../img/' + product_data.image" alt="img" class="table-item-image">
-    <h3 class="table-item-number">{{product_data.name}}</h3>
-    <p class="table-item-price">Price: {{product_data.price}}</p>
-    <button class="table-item-button btn"
+<div class="kids-item">
+    <img :src="'../img/' + product_data.image" alt="img" class="kids-item-image">
+    <h3 class="kids-item-number">{{product_data.name}}</h3>
+    <p class="kids-item-price">Price: {{product_data.price}}</p>
+    <button class="kids-item-button btn"
     @click = "addToCart">
     Add to Cart
     </button>
@@ -12,7 +12,7 @@
 
 <script>
 export default { 
-    name: 'tables-item',
+    name: 'kids-item',
     methods: {
         addToCart() {
             this.$emit('addToCart', this.product_data)
@@ -38,7 +38,7 @@ export default {
 </script>
 
 <style lang="scss">
-.table-item {
+.kids-item {
     border: 1px solid white;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     padding: 30px;

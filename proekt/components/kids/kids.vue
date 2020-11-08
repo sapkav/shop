@@ -1,36 +1,36 @@
 <template> 
-<div class="tables">
+<div class="kid">
  <!-- <router-link :to="{ name: 'busket', params: { busket_data: BUSKET }}">
-    <div class="tables-link-busket">
+    <div class="kid-link-busket">
       Количество: {{BUSKET.length}}
       </div>
     </router-link> -->
-    <h1 class="tables-title">Catalog {{BUSKET.length}}</h1>
-    <div class="tables-list">
-        <table-item
-          v-for = "product in PRODUCTS"
+    <h1 class="kid-title">Catalog {{BUSKET.length}}</h1>
+    <div class="kid-list">
+        <kids-item
+          v-for = "product in PRODUCTSSPORT"
           :key = "product.article"
           :product_data="product"
           @addToCart = 'addToCart'>
-          </table-item>
+          </kids-item>
     </div>
 </div>
 </template>
 
 <script>
-import tableItem from './table-item.vue'
+import kidsItem from './kids-item.vue'
 import {mapActions, mapGetters} from 'vuex'
 
 export default { 
-    name: 'tables',
+    name: 'kid',
     components: {
-        tableItem
+        kidsItem
     },
     props: {
     },
     computed:{
       ...mapGetters([
-        'PRODUCTS',
+        'PRODUCTSSPORT',
         'BUSKET'
       ])
     },
@@ -60,7 +60,7 @@ export default {
 </script>
 
 <style lang="scss">
-.tables {
+.kid {
 
   &-title {
     text-align: center;

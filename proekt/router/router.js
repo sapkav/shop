@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import vTable from '../components/table/table.vue'
+import vTable from '../components/kids/kids.vue'
 import vBusket from '../components/busket/busket.vue'
 import vMenu from '../components/v-menu.vue'
 
@@ -15,8 +15,8 @@ let router = new Router({
             component: vMenu
         },
         {
-            path:'/table',
-            name: 'table',
+            path:'/kids',
+            name: 'kids',
             component: vTable
         },
         {

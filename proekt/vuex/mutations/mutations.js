@@ -29,4 +29,11 @@ export default {
             state.busket[index].quantity--;
         }
     },
+    SET_PRODUCTSSPORT: (state, products) => {
+        products.forEach(item => {
+            if (item.type == "sport") {
+                state.productsSport.push(item)
+            }
+        })
+    }
 }

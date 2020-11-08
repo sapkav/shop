@@ -4,5 +4,8 @@ export default {
     },
     BUSKET(state) {
       return state.busket
+  },
+  PRODUCTSSPORT(state) {
+    return state.productsSport
   }
 }

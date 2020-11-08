@@ -2,10 +2,10 @@
  <div class = "main-wrapper">  
      <div class = "main-wrapper-header">
          <div class="main-wrapper-header-logo">
-             <nav><router-link to="/">Socks</router-link></nav>
+             <nav><router-link to="/">logo</router-link></nav>
          </div>
          <div class="main-wrapper-header-links">
-             <nav><router-link :to="'table'">Socks</router-link>
+             <nav><router-link :to="'kids'">Kids Socks</router-link>
              <router-link :to="'busket'">Busket</router-link>
              </nav>
          </div>

@@ -8,6 +8,7 @@ export default {
         })
         .then(products => {
             commit('SET_PRODUCTS_TO_STATE', products.data);
+            commit('SET_PRODUCTSSPORT', products.data)
             return products;
         })
         .catch((e) => {

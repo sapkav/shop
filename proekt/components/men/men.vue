@@ -31,7 +31,8 @@ export default {
     computed:{
       ...mapGetters([
         'PRODUCTSMEN',
-        'BUSKET'
+        'BUSKET',
+        'ISPRODUCT'
       ])
     },
     methods: {
@@ -40,7 +41,7 @@ export default {
       },
       ...mapActions([
          'ADD_TO_BUSKET',
-         'GET_PRODUCTSMEN'
+         'GET_PRODUCTS'
       ]),
         },
     data() {
@@ -49,7 +50,9 @@ export default {
         }
     },
     mounted() {
-      this.GET_PRODUCTSMEN()
+    if (!this.ISPRODUCT) {
+      this.GET_PRODUCTS()
+    }
     },
 }
 </script>

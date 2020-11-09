@@ -10,5 +10,8 @@ export default {
   },
   PRODUCTSMEN(state) {
     return state.productsMen
+  },
+  ISPRODUCT(state) {
+    return state.isProduct
   }
 }

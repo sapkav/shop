@@ -1,9 +1,9 @@
 <template>
-  <div class="kids-item">
-    <img :src="'../img/kids/' + product_data.image" alt="img" class="kids-item-image">
-    <h3 class="kids-item-number">{{product_data.name}}</h3>
-    <p class="kids-item-price">Price: {{product_data.price}}</p>
-    <button class="kids-item-button btn"
+  <div class="men-item">
+    <img :src="'../img/men/' + product_data.image" alt="img" class="men-item-image">
+    <h3 class="men-item-number">{{product_data.name}}</h3>
+    <p class="men-item-price">Price: {{product_data.price}}</p>
+    <button class="men-item-button btn"
     @click = "addToCart">
     Add to Cart
     </button>
@@ -38,7 +38,7 @@ export default {
 </script>
 
 <style lang="scss">
-.kids-item {
+.men-item {
     background-color: white;
     border: 1px solid white;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);

@@ -1,6 +1,15 @@
+
 export default {
     SET_PRODUCTS_TO_STATE: (state, products) => {
         state.products = products
+        state.isProduct = true
+        for (let i = 0; i < products.length; i++) {
+            if (state.products[i].type == 'kids') {
+                state.productsKids.push(state.products[i])
+            } else if (state.products[i].type == 'men') {
+                state.productsMen.push(state.products[i])
+            }
+        }
     },
     SET_BUSKET: (state, products) => {
         if (state.busket.length) {
@@ -29,7 +38,7 @@ export default {
             state.busket[index].quantity--;
         }
     },
-    SET_PRODUCTSKIDS: (state) => {
+    /* SET_PRODUCTSKIDS: (state) => {
         for (let i = 0; i < state.products.length ; i++) {
             if (state.products[i].type == 'kids') {
                 state.productsKids.push(state.products[i])
@@ -42,5 +51,5 @@ export default {
                 state.productsMen.push(state.products[i])
             }
         }
-    },
+    }, */
 }

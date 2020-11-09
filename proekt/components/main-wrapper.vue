@@ -11,7 +11,9 @@
              </nav>
          </div>
         <div class="main-wrapper-header-logo">
-             <span>sdds</span>
+             <router-link :to="'busket'" class="main-wrapper-header-links-link"><img src="img/shop.png" alt="" width="25">
+             <span>{{BUSKET.length}}</span>
+             </router-link>
          </div>
      </div>
      <keep-alive>
@@ -34,7 +36,9 @@ components: {
 
 },
 computed: {
-
+      ...mapGetters([
+        'BUSKET'
+      ])
 }
 }
 </script>
@@ -48,13 +52,14 @@ computed: {
         top: 0;
         grid-template-columns: 1fr 4fr 1fr;  
         justify-items: center;
-        background-color: rgba(48, 50, 95, 0.9);
+        background-color: white;
         padding-top: 14px;
         padding-bottom: 14px;
+        border-bottom: 1px solid black;
 
         &-links {
             a {
-                color: white;
+                color: rgb(86, 49, 155);
                 text-decoration: none;
                 transition: all .5s ease-in-out;
                 font-size: 20px;

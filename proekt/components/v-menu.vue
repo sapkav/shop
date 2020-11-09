@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import {mapActions} from 'vuex'
+import {mapActions, mapGetters} from 'vuex'
 
 export default {
     name: 'main-menu',
@@ -19,8 +19,15 @@ export default {
         'GET_PRODUCTS',
       ]),
     },
+    computed: {
+      ...mapGetters([
+        'ISPRODUCT'
+      ])
+    },
     mounted() {
+      if (!this.ISPRODUCT) {
       this.GET_PRODUCTS()
+    }
     }
 }
 </script>

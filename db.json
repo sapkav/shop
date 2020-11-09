@@ -323,6 +323,222 @@
         "article": "W12",
         "available": true,
         "category": "Мужские"
+      },
+      {
+        "image": "super1.jpg",
+        "type" : "super",
+        "name": "T-shirt 1",
+        "price": 2100,
+        "article": "W1",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "super2.jpg",
+        "type" : "super",
+        "name": "T-shirt 1",
+        "price": 2100,
+        "article": "W2",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "super3.jpg",
+        "type" : "super",
+        "name": "T-shirt 1",
+        "price": 2100,
+        "article": "W3",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "super4.jpg",
+        "type" : "super",
+        "name": "T-shirt 1",
+        "price": 2100,
+        "article": "W4",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "super5.jpg",
+        "type" : "super",
+        "name": "T-shirt 1",
+        "price": 2100,
+        "article": "W5",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "super6.jpg",
+        "type" : "super",
+        "name": "T-shirt 1",
+        "price": 2100,
+        "article": "W6",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "super7.jpg",
+        "type" : "super",
+        "name": "T-shirt 1",
+        "price": 2100,
+        "article": "W7",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "super8.jpg",
+        "type" : "super",
+        "name": "T-shirt 1",
+        "price": 2100,
+        "article": "W8",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "super9.jpg",
+        "type" : "super",
+        "name": "T-shirt 1",
+        "price": 2100,
+        "article": "W9",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "super10.jpg",
+        "type" : "super",
+        "name": "T-shirt 1",
+        "price": 2100,
+        "article": "W10",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "super11.jpg",
+        "type" : "super",
+        "name": "T-shirt 1",
+        "price": 2100,
+        "article": "W11",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "super12.jpg",
+        "type" : "super",
+        "name": "T-shirt 1",
+        "price": 2100,
+        "article": "W12",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "badges1.jpg",
+        "type" : "badges",
+        "name": "T-shirt 1",
+        "price": 2100,
+        "article": "W1",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "badges2.jpg",
+        "type" : "badges",
+        "name": "T-shirt 1",
+        "price": 2100,
+        "article": "W2",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "badges3.jpg",
+        "type" : "badges",
+        "name": "T-shirt 1",
+        "price": 2100,
+        "article": "W3",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "badges4.jpg",
+        "type" : "badges",
+        "name": "T-shirt 1",
+        "price": 2100,
+        "article": "W4",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "badges5.jpg",
+        "type" : "badges",
+        "name": "T-shirt 1",
+        "price": 2100,
+        "article": "W5",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "badges6.jpg",
+        "type" : "badges",
+        "name": "T-shirt 1",
+        "price": 2100,
+        "article": "W6",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "badges7.jpg",
+        "type" : "badges",
+        "name": "T-shirt 1",
+        "price": 2100,
+        "article": "W7",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "badges8.jpg",
+        "type" : "badges",
+        "name": "T-shirt 1",
+        "price": 2100,
+        "article": "W8",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "badges9.jpg",
+        "type" : "badges",
+        "name": "T-shirt 1",
+        "price": 2100,
+        "article": "W9",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "badges10.jpg",
+        "type" : "badges",
+        "name": "T-shirt 1",
+        "price": 2100,
+        "article": "W10",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "badges11.jpg",
+        "type" : "badges",
+        "name": "T-shirt 1",
+        "price": 2100,
+        "article": "W11",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "badges12.jpg",
+        "type" : "badges",
+        "name": "T-shirt 1",
+        "price": 2100,
+        "article": "W12",
+        "available": true,
+        "category": "Мужские"
       }
     ]
   }

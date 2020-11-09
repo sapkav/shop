@@ -9,10 +9,12 @@
              <router-link :to="'kids'" class="main-wrapper-header-links-link">KidsSocks</router-link>
              <router-link :to="'men'" class="main-wrapper-header-links-link">MenSocks</router-link>
              <router-link :to="'women'" class="main-wrapper-header-links-link">WomenSocks</router-link>
+             <router-link :to="'super'" class="main-wrapper-header-links-link">SuperSocks</router-link>
+             <router-link :to="'badges'" class="main-wrapper-header-links-link">Badges</router-link>
              </nav>
          </div>
         <div class="main-wrapper-header-logo">
-             <router-link :to="'busket'" class="main-wrapper-header-links-link"><img src="img/shop.png" alt="" width="25">
+            <router-link :to="{ name: 'busket', params: { busket_data: BUSKET }}"><img src="img/shop.png" alt="" width="25">
              <span>{{BUSKET.length}}</span>
              </router-link>
          </div>

@@ -10,6 +10,10 @@ export default {
                 state.productsMen.push(state.products[i])
             } else if (state.products[i].type == 'women') {
                 state.productsWomen.push(state.products[i])
+            } else if (state.products[i].type == 'super') {
+                state.productsSuper.push(state.products[i])
+            } else if (state.products[i].type == 'badges') {
+                state.productsBadges.push(state.products[i])
             }
         }
     },

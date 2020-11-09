@@ -1,10 +1,10 @@
 <template>
   <div class="busket-item">
-    <img :src="'../img/' + busket_item_data.image" alt="img" class="busket-item-image">
+    <img :src="'../img/' + busket_item_data.type + '/' + busket_item_data.image" alt="img" class="busket-item-image">
     <div class="busket-item-info">
     <h3 class="busket-item-info-number">{{busket_item_data.name}}</h3>
     <p class="busket-item-info-price">Price: {{busket_item_data.price}}</p>
-    <p class="busket-item-info-article">Price: {{busket_item_data.article}}</p>
+    <p class="busket-item-info-article">Article: {{busket_item_data.article}}</p>
     <p class="busket-item-info-quantity">Количество: {{busket_item_data.quantity}}</p>
     <div class="busket-item-info-buttons">
       <button class="busket-item-info-buttons-button" @click = 'decrement'>-</button>

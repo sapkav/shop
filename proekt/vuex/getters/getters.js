@@ -14,6 +14,12 @@ export default {
   PRODUCTSWOMEN(state) {
     return state.productsWomen
   },
+  PRODUCTSSUPER(state) {
+    return state.productsSuper
+  },
+  PRODUCTSBADGES(state) {
+    return state.productsBadges
+  },
   ISPRODUCT(state) {
     return state.isProduct
   }

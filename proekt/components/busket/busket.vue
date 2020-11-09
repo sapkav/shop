@@ -1,10 +1,5 @@
 <template> 
 <div class="busket">
-      <router-link :to="{ name: 'table'}">
-    <div class="tables-link-busket">
-      Вернуться назад
-      </div>
-    </router-link>
     <h3 class="busket-title">Корзина</h3>
     <p v-if = "!busket_data.length" class="busket-subtitle">Корзина пустая уф....</p>
     <div class="busket-links">

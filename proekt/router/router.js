@@ -5,6 +5,8 @@ import vBusket from '../components/busket/busket.vue'
 import vMen from '../components/men/men.vue'
 import vMenu from '../components/v-menu.vue'
 import vWomen from '../components/women/women.vue'
+import vSuper from '../components/super/super.vue'
+import vBadges from '../components/badges/badges.vue'
 
 
 Vue.use(Router);
@@ -30,6 +32,16 @@ let router = new Router({
             path:'/women',
             name: 'women',
             component: vWomen
+        },
+        {
+            path:'/super',
+            name: 'super',
+            component: vSuper
+        },
+        {
+            path:'/badges',
+            name: 'badges',
+            component: vBadges
         },
         {
             path:'/busket',

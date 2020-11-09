@@ -215,6 +215,114 @@
         "article": "M12",
         "available": true,
         "category": "Мужские"
+      },
+      {
+        "image": "women1.jpg",
+        "type" : "women",
+        "name": "T-shirt 1",
+        "price": 2100,
+        "article": "W1",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "women2.jpg",
+        "type" : "women",
+        "name": "T-shirt 1",
+        "price": 2100,
+        "article": "W2",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "women3.jpg",
+        "type" : "women",
+        "name": "T-shirt 1",
+        "price": 2100,
+        "article": "W3",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "women4.jpg",
+        "type" : "women",
+        "name": "T-shirt 1",
+        "price": 2100,
+        "article": "W4",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "women5.jpg",
+        "type" : "women",
+        "name": "T-shirt 1",
+        "price": 2100,
+        "article": "W5",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "women6.jpg",
+        "type" : "women",
+        "name": "T-shirt 1",
+        "price": 2100,
+        "article": "W6",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "women7.jpg",
+        "type" : "women",
+        "name": "T-shirt 1",
+        "price": 2100,
+        "article": "W7",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "women8.jpg",
+        "type" : "women",
+        "name": "T-shirt 1",
+        "price": 2100,
+        "article": "W8",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "women9.jpg",
+        "type" : "women",
+        "name": "T-shirt 1",
+        "price": 2100,
+        "article": "W9",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "women10.jpg",
+        "type" : "women",
+        "name": "T-shirt 1",
+        "price": 2100,
+        "article": "W10",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "women11.jpg",
+        "type" : "women",
+        "name": "T-shirt 1",
+        "price": 2100,
+        "article": "W11",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "women12.jpg",
+        "type" : "women",
+        "name": "T-shirt 1",
+        "price": 2100,
+        "article": "W12",
+        "available": true,
+        "category": "Мужские"
       }
     ]
   }

@@ -11,6 +11,9 @@ export default {
   PRODUCTSMEN(state) {
     return state.productsMen
   },
+  PRODUCTSWOMEN(state) {
+    return state.productsWomen
+  },
   ISPRODUCT(state) {
     return state.isProduct
   }

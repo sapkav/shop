@@ -8,6 +8,7 @@
              <nav>
              <router-link :to="'kids'" class="main-wrapper-header-links-link">KidsSocks</router-link>
              <router-link :to="'men'" class="main-wrapper-header-links-link">MenSocks</router-link>
+             <router-link :to="'women'" class="main-wrapper-header-links-link">WomenSocks</router-link>
              </nav>
          </div>
         <div class="main-wrapper-header-logo">

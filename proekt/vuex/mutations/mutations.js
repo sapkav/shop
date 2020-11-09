@@ -8,6 +8,8 @@ export default {
                 state.productsKids.push(state.products[i])
             } else if (state.products[i].type == 'men') {
                 state.productsMen.push(state.products[i])
+            } else if (state.products[i].type == 'women') {
+                state.productsWomen.push(state.products[i])
             }
         }
     },

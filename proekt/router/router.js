@@ -4,6 +4,7 @@ import vTable from '../components/kids/kids.vue'
 import vBusket from '../components/busket/busket.vue'
 import vMen from '../components/men/men.vue'
 import vMenu from '../components/v-menu.vue'
+import vWomen from '../components/women/women.vue'
 
 
 Vue.use(Router);
@@ -24,6 +25,11 @@ let router = new Router({
             path:'/men',
             name: 'men',
             component: vMen
+        },
+        {
+            path:'/women',
+            name: 'women',
+            component: vWomen
         },
         {
             path:'/busket',

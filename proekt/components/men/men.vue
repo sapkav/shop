@@ -67,6 +67,7 @@ export default {
     font-size: 40px;
     text-align: center;
     padding-top: 0;
+    color: rgba(206, 60, 60, 0.733);
   }
 
  &-list {

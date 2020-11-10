@@ -1,11 +1,11 @@
 <template>
   <div class="women-item">
     <img :src="'../img/women/' + product_data.image" alt="img" class="women-item-image">
-    <h3 class="women-item-number">{{product_data.name}}</h3>
-    <p class="women-item-price">Price: {{product_data.price}}</p>
+    <h3 class="women-item-number">Носки: {{product_data.name}}</h3>
+    <p class="women-item-price">Цена: {{product_data.price}}р</p>
     <button class="women-item-button btn"
     @click = "addToCart">
-    Add to Cart
+    Добавить в корзину
     </button>
 </div>
 </template>
@@ -48,8 +48,8 @@ export default {
     margin-bottom: 30px;
 
     &-image {
-        width: 100px;  
-        height: 120px;
+        width: 150px;  
+        height: 170px;
     }
 
     .btn {

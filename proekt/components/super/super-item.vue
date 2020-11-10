@@ -1,11 +1,11 @@
 <template>
   <div class="super-item">
     <img :src="'../img/super/' + product_data.image" alt="img" class="super-item-image">
-    <h3 class="super-item-number">{{product_data.name}}</h3>
-    <p class="super-item-price">Price: {{product_data.price}}</p>
+    <h3 class="super-item-number">Носки: {{product_data.name}}</h3>
+    <p class="super-item-price">Цена: {{product_data.price}}р</p>
     <button class="super-item-button btn"
     @click = "addToCart">
-    Add to Cart
+    Добавить в корзину
     </button>
 </div>
 </template>
@@ -48,8 +48,9 @@ export default {
     margin-bottom: 30px;
 
     &-image {
-        width: 100px;  
-        height: 120px;
+        width: 150px;  
+        height: 170px;
+
     }
 
     .btn {
@@ -57,5 +58,6 @@ export default {
         box-shadow: 0 0 5px rgba(0,0,0,0.5);
         border-radius: 2px;
     }
+
 }
 </style>

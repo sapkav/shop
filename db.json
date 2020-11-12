@@ -6,7 +6,7 @@
         "name": "Снеговик",
         "price": 300,
         "article": "K1",
-        "available": true,
+        "available": false,
         "category": "Мужские"
       },
       {
@@ -60,7 +60,7 @@
         "name": "Сова",
         "price": 210,
         "article": "K7",
-        "available": true,
+        "available": false,
         "category": "Мужские"
       },
       {
@@ -123,7 +123,7 @@
         "name": "Россия",
         "price": 31,
         "article": "M2",
-        "available": true,
+        "available": false,
         "category": "Мужские"
       },
       {
@@ -195,7 +195,7 @@
         "name": "Бабушкины1",
         "price": 100,
         "article": "M10",
-        "available": true,
+        "available": false,
         "category": "Мужские"
       },
       {
@@ -231,7 +231,7 @@
         "name": "Красные цветы",
         "price": 150,
         "article": "W2",
-        "available": true,
+        "available": false,
         "category": "Мужские"
       },
       {
@@ -258,7 +258,7 @@
         "name": "Электроника",
         "price": 150,
         "article": "W5",
-        "available": true,
+        "available": false,
         "category": "Мужские"
       },
       {
@@ -294,7 +294,7 @@
         "name": "Котики",
         "price": 140,
         "article": "W9",
-        "available": true,
+        "available": false,
         "category": "Мужские"
       },
       {
@@ -321,7 +321,7 @@
         "name": "Клубника",
         "price": 210,
         "article": "W12",
-        "available": true,
+        "available": false,
         "category": "Мужские"
       },
       {
@@ -348,7 +348,7 @@
         "name": "Фламинго",
         "price": 300,
         "article": "W3",
-        "available": true,
+        "available": false,
         "category": "Мужские"
       },
       {
@@ -375,7 +375,7 @@
         "name": "Космос",
         "price": 240,
         "article": "W6",
-        "available": true,
+        "available": false,
         "category": "Мужские"
       },
       {
@@ -402,7 +402,7 @@
         "name": "Арбуз",
         "price": 270,
         "article": "W9",
-        "available": true,
+        "available": false,
         "category": "Мужские"
       },
       {
@@ -438,7 +438,7 @@
         "name": "Корги",
         "price": 320,
         "article": "B1",
-        "available": true,
+        "available": false,
         "category": "Мужские"
       },
       {
@@ -501,7 +501,7 @@
         "name": "Мопс",
         "price": 420,
         "article": "B8",
-        "available": true,
+        "available": false,
         "category": "Мужские"
       },
       {
@@ -537,7 +537,7 @@
         "name": "Летучая мышь",
         "price": 410,
         "article": "B12",
-        "available": true,
+        "available": false,
         "category": "Мужские"
       }
     ]

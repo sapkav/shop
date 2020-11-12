@@ -1,12 +1,13 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import vTable from '../components/kids/kids.vue'
+import vKids from '../components/kids/kids.vue'
 import vBusket from '../components/busket/busket.vue'
 import vMen from '../components/men/men.vue'
 import vMenu from '../components/v-menu.vue'
 import vWomen from '../components/women/women.vue'
 import vSuper from '../components/super/super.vue'
 import vBadges from '../components/badges/badges.vue'
+import vKidsItemPage from '../components/kids/kids-item-page.vue'
 
 
 Vue.use(Router);
@@ -21,7 +22,12 @@ let router = new Router({
         {
             path:'/kids',
             name: 'kids',
-            component: vTable
+            component: vKids
+        },
+        {
+            path:'/kids/:id',
+            name: 'kids-item',
+            component: vKidsItemPage
         },
         {
             path:'/men',

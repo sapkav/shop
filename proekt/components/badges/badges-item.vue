@@ -1,13 +1,17 @@
-<template>
-  <div class="badges-item">
+<template> 
+<router-link :to="`/badges/${product_data.article}`" tag = "div" class="badges" v-bind:class="{'badges-sale': !product_data.available}">
+<div class = "badges-item">
     <img :src="'../img/badges/' + product_data.image" alt="img" class="badges-item-image">
-    <h3 class="badges-item-number">Значок: {{product_data.name}}</h3>
-    <p class="badges-item-price">Цена: {{product_data.price}}р</p>
-    <button class="badges-item-button btn"
-    @click = "addToCart">
+    <h3 class="badges-item-number">Носки: {{product_data.name}}</h3>
+    <p class="badges-item-price" v-show="product_data.available">Цена: {{product_data.price}}р</p>
+    <p class="badges-sale-price" v-show="!product_data.available">Нет в наличии ({{product_data.price}}р)</p>
+   <!-- <button class="badges-item-button btn"
+    @click = "addToCart"
+    :disabled = "!product_data.available">
     Добавить в корзину
-    </button>
+    </button> -->
 </div>
+    </router-link>
 </template>
 
 <script>
@@ -16,6 +20,9 @@ export default {
     methods: {
         addToCart() {
             this.$emit('addToCart', this.product_data)
+        },
+                goDetail() {
+              this.$router.push({name:'badges-item'})
         }
     },
     mounted() {
@@ -31,31 +38,44 @@ export default {
     },
     data() {
         return {
-
+              classObject: {
+                  'badges-item': true
+              }
         }
+    },
+ computed: {
     }
 }
 </script>
 
 <style lang="scss">
-.badges-item {
-    background-color: white;
+.badges {
+    margin-bottom: 20px;
     border: 1px solid white;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    padding: 30px;
-    min-width: 80%;
+        &-sale {
+        border: 2px solid red;
+
+        &-price {
+            font-size: 20px;
+            color: rgb(255, 0, 0);
+            font-weight: 700;
+        }
+    }
+
+&-item {
     text-align: center;
-    margin-bottom: 30px;
+    background-color: rgb(241, 241, 241);
+    padding-bottom: 20px;
+    
+    &-price {
+        font-size: 20px;
+    }
 
     &-image {
-        width: 150px;  
-        height: 170px;
+        width: 100%;
+        height: 250px;
     }
-
-    .btn {
-        border: none;
-        box-shadow: 0 0 5px rgba(0,0,0,0.5);
-        border-radius: 2px;
-    }
+}
 }
 </style>

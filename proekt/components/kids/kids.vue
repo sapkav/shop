@@ -136,8 +136,7 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 
 .kid {
-  min-height: 95vh;
-  font-family: 'Inconsolata', monospace;
+ font-family: 'Inconsolata', monospace;
 
   &-filters {
     display: grid;
@@ -196,6 +195,7 @@ export default {
   }
 
  &-list {
+   padding-top: 20px;
      display: grid;
      grid-template-columns: repeat(4, 1fr);
      width: 80%;

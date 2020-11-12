@@ -50,17 +50,9 @@ export default {
 
 <style lang="scss">
 .kids {
-    margin-top: 20px;
-    cursor: pointer;
-    text-decoration: none;
-    background-color: rgb(241, 241, 241);
+    margin-bottom: 20px;
     border: 1px solid white;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    min-width: 80%;
-    text-align: center;
-    margin-bottom: 30px;
-    
-
         &-sale {
         border: 2px solid red;
 
@@ -72,15 +64,16 @@ export default {
     }
 
 &-item {
-
+    text-align: center;
+    background-color: rgb(241, 241, 241);
+    padding-bottom: 20px;
     
     &-price {
         font-size: 20px;
-        text-decoration: none;
     }
 
     &-image {
-        min-width: 100%;  
+        width: 100%;
         height: 250px;
     }
 }

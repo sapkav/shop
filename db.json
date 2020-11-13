@@ -1,52 +1,544 @@
 {
     "products": [
       {
-        "image": "1.jpg",
-        "name": "T-shirt 1",
-        "price": 2100,
-        "article": "T1",
-        "available": true,
+        "image": "kids1.jpg",
+        "type" : "kids",
+        "name": "Снеговик",
+        "price": 300,
+        "article": "K1",
+        "available": false,
         "category": "Мужские"
       },
       {
-        "image": "2.jpg",
-        "name": "T-shirt 2",
-        "price": 3150,
-        "article": "T2",
+        "image": "kids2.jpg",
+        "type" : "kids",
+        "name": "Слоник",
+        "price": 260,
+        "article": "K2",
         "available": true,
         "category": "Женские"
       },
       {
-        "image": "3.jpg",
-        "name": "T-shirt 3",
-        "price": 4200,
-        "article": "T3",
+        "image": "kids3.jpg",
+        "type" : "kids",
+        "name": "Лев",
+        "price": 260,
+        "article": "K3",
         "available": false,
         "category": "Женские"
       },
       {
-        "image": "4.jpg",
-        "name": "T-shirt 4",
-        "price": 5300,
-        "article": "T4",
+        "image": "kids4.jpg",
+        "type" : "kids",
+        "name": "Машинки",
+        "price": 150,
+        "article": "K4",
         "available": true,
         "category": "Мужские"
       },
       {
-        "image": "5.jpg",
-        "name": "T-shirt 5",
-        "price": 6500,
-        "article": "T5",
+        "image": "kids5.jpg",
+        "type" : "kids",
+        "name": "Мамина любовь",
+        "price": 170,
+        "article": "K5",
         "available": false,
         "category": "Женские"
       },
       {
-        "image": "6.jpg",
-        "name": "T-shirt 6",
-        "price": 8700,
-        "article": "T6",
+        "image": "kids6.jpg",
+        "type" : "kids",
+        "name": "Папина любовь",
+        "price": 170,
+        "article": "K6",
         "available": true,
         "category": "Женские"
+      },
+      {
+        "image": "kids7.jpg",
+        "type" : "kids",
+        "name": "Сова",
+        "price": 210,
+        "article": "K7",
+        "available": false,
+        "category": "Мужские"
+      },
+      {
+        "image": "kids8.jpg",
+        "type" : "kids",
+        "name": "Монстр траки",
+        "price": 130,
+        "article": "K8",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "kids9.jpg",
+        "type" : "kids",
+        "name": "Звезды",
+        "price": 200,
+        "article": "K9",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "kids10.jpg",
+        "type" : "kids",
+        "name": "Микки-Маус",
+        "price": 130,
+        "article": "K10",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "kids11.jpg",
+        "type" : "kids",
+        "name": "Мышки",
+        "price": 120,
+        "article": "K11",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "kids12.jpg",
+        "type" : "kids",
+        "name": "Котик",
+        "price": 260,
+        "article": "K12",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "men1.jpg",
+        "type" : "men",
+        "name": "Бородачи",
+        "price": 300,
+        "article": "M1",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "men2.jpg",
+        "type" : "men",
+        "name": "Россия",
+        "price": 31,
+        "article": "M2",
+        "available": false,
+        "category": "Мужские"
+      },
+      {
+        "image": "men3.jpg",
+        "type" : "men",
+        "name": "Коричневики",
+        "price": 70,
+        "article": "M3",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "men4.jpg",
+        "type" : "men",
+        "name": "Гетры синие",
+        "price": 130,
+        "article": "M4",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "men5.jpg",
+        "type" : "men",
+        "name": "Синячки",
+        "price": 70,
+        "article": "M5",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "men6.jpg",
+        "type" : "men",
+        "name": "Роза",
+        "price": 100,
+        "article": "M6",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "men7.jpg",
+        "type" : "men",
+        "name": "Полосковички",
+        "price": 130,
+        "article": "M7",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "men8.jpg",
+        "type" : "men",
+        "name": "Клетчитки",
+        "price": 80,
+        "article": "M8",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "men9.jpg",
+        "type" : "men",
+        "name": "Парашнички))",
+        "price": 50,
+        "article": "M9",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "men10.jpg",
+        "type" : "men",
+        "name": "Бабушкины1",
+        "price": 100,
+        "article": "M10",
+        "available": false,
+        "category": "Мужские"
+      },
+      {
+        "image": "men11.jpg",
+        "type" : "men",
+        "name": "Домашние",
+        "price": 110,
+        "article": "M11",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "men12.jpg",
+        "type" : "men",
+        "name": "Спортивные белые",
+        "price": 130,
+        "article": "M12",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "women1.jpg",
+        "type" : "women",
+        "name": "Новогодние",
+        "price": 310,
+        "article": "W1",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "women2.jpg",
+        "type" : "women",
+        "name": "Красные цветы",
+        "price": 150,
+        "article": "W2",
+        "available": false,
+        "category": "Мужские"
+      },
+      {
+        "image": "women3.jpg",
+        "type" : "women",
+        "name": "Пейзаж",
+        "price": 130,
+        "article": "W3",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "women4.jpg",
+        "type" : "women",
+        "name": "Ананасики",
+        "price": 250,
+        "article": "W4",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "women5.jpg",
+        "type" : "women",
+        "name": "Электроника",
+        "price": 150,
+        "article": "W5",
+        "available": false,
+        "category": "Мужские"
+      },
+      {
+        "image": "women6.jpg",
+        "type" : "women",
+        "name": "Сонники",
+        "price": 140,
+        "article": "W6",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "women7.jpg",
+        "type" : "women",
+        "name": "Харизантемы",
+        "price": 150,
+        "article": "W7",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "women8.jpg",
+        "type" : "women",
+        "name": "Фрукты",
+        "price": 150,
+        "article": "W8",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "women9.jpg",
+        "type" : "women",
+        "name": "Котики",
+        "price": 140,
+        "article": "W9",
+        "available": false,
+        "category": "Мужские"
+      },
+      {
+        "image": "women10.jpg",
+        "type" : "women",
+        "name": "Цветы",
+        "price": 140,
+        "article": "W10",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "women11.jpg",
+        "type" : "women",
+        "name": "Пончики",
+        "price": 220,
+        "article": "W11",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "women12.jpg",
+        "type" : "women",
+        "name": "Клубника",
+        "price": 210,
+        "article": "W12",
+        "available": false,
+        "category": "Мужские"
+      },
+      {
+        "image": "super1.jpg",
+        "type" : "super",
+        "name": "Фрукты",
+        "price": 230,
+        "article": "S1",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "super2.jpg",
+        "type" : "super",
+        "name": "Начосы",
+        "price": 210,
+        "article": "S2",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "super3.jpg",
+        "type" : "super",
+        "name": "Фламинго",
+        "price": 300,
+        "article": "S3",
+        "available": false,
+        "category": "Мужские"
+      },
+      {
+        "image": "super4.jpg",
+        "type" : "super",
+        "name": "Ссыкун",
+        "price": 400,
+        "article": "S4",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "super5.jpg",
+        "type" : "super",
+        "name": "Авокадо",
+        "price": 300,
+        "article": "S5",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "super6.jpg",
+        "type" : "super",
+        "name": "Космос",
+        "price": 240,
+        "article": "S6",
+        "available": false,
+        "category": "Мужские"
+      },
+      {
+        "image": "super7.jpg",
+        "type" : "super",
+        "name": "ЯЖМАТЬ",
+        "price": 300,
+        "article": "S7",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "super8.jpg",
+        "type" : "super",
+        "name": "Петучи",
+        "price": 240,
+        "article": "S8",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "super9.jpg",
+        "type" : "super",
+        "name": "Арбуз",
+        "price": 270,
+        "article": "S9",
+        "available": false,
+        "category": "Мужские"
+      },
+      {
+        "image": "super10.jpg",
+        "type" : "super",
+        "name": "Винца хочется",
+        "price": 400,
+        "article": "S10",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "super11.jpg",
+        "type" : "super",
+        "name": "Панды",
+        "price": 270,
+        "article": "S11",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "super12.jpg",
+        "type" : "super",
+        "name": "Конопля",
+        "price": 300,
+        "article": "S12",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "badges1.jpg",
+        "type" : "badges",
+        "name": "Корги",
+        "price": 320,
+        "article": "B1",
+        "available": false,
+        "category": "Мужские"
+      },
+      {
+        "image": "badges2.jpg",
+        "type" : "badges",
+        "name": "ЪУЪ",
+        "price": 390,
+        "article": "B2",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "badges3.jpg",
+        "type" : "badges",
+        "name": "Все хорошо",
+        "price": 370,
+        "article": "B3",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "badges4.jpg",
+        "type" : "badges",
+        "name": "Лиса",
+        "price": 350,
+        "article": "B4",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "badges5.jpg",
+        "type" : "badges",
+        "name": "Единорог",
+        "price": 420,
+        "article": "B5",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "badges6.jpg",
+        "type" : "badges",
+        "name": "Бесишь",
+        "price": 340,
+        "article": "B6",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "badges7.jpg",
+        "type" : "badges",
+        "name": "Лапки",
+        "price": 410,
+        "article": "B7",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "badges8.jpg",
+        "type" : "badges",
+        "name": "Мопс",
+        "price": 420,
+        "article": "B8",
+        "available": false,
+        "category": "Мужские"
+      },
+      {
+        "image": "badges9.jpg",
+        "type" : "badges",
+        "name": "Лист",
+        "price": 330,
+        "article": "B9",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "badges10.jpg",
+        "type" : "badges",
+        "name": "Пепа",
+        "price": 440,
+        "article": "B10",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "badges11.jpg",
+        "type" : "badges",
+        "name": "Крик",
+        "price": 500,
+        "article": "B11",
+        "available": true,
+        "category": "Мужские"
+      },
+      {
+        "image": "badges12.jpg",
+        "type" : "badges",
+        "name": "Летучая мышь",
+        "price": 410,
+        "article": "B12",
+        "available": false,
+        "category": "Мужские"
       }
     ]
   }

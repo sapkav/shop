@@ -1,5 +1,9 @@
 <template> 
-<router-link :to="`/products/${product_data.article}`" tag = "div" class="men1" v-bind:class="{'men1-sale': !product_data.available}">
+<router-link
+ :to="`/products/${product_data.article}`"
+  tag = "div"
+   class="men1"
+ v-bind:class="{'men1-sale': !product_data.available}">
 <div class = "men1-item">
     <img :src="'../img/men/' + product_data.image" alt="img" class="men1-item-image">
     <h3 class="men1-item-number">Носки: {{product_data.name}}</h3>
@@ -23,7 +27,7 @@ export default {
         },
     },
     mounted() {
-        this.$set(this.product_data, 'quantity', 1)
+        this.$set(this.product_data, 'quantity', 1)      
     },
     props: {
             product_data: {
@@ -37,7 +41,7 @@ export default {
         return {
               classObject: {
                   'kids-item': true
-              }
+              },
         }
     },
  computed: {

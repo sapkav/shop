@@ -6,7 +6,8 @@
 
 <script>
 export default {
-name: 'men-item-page'
+  name: 'men-item-page',
+
 }
 </script>
 

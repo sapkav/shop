@@ -77,7 +77,8 @@ let router = new Router({
         {
             path:'/products/:id',
             name: 'page-for-items',
-            component: vPageForItems
+            component: vPageForItems,
+            props: true
         }, 
         {
             path:'/busket',

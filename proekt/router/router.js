@@ -12,6 +12,7 @@ import vKidsItemPage from '../components/kids/kids-item-page.vue'
 import vMenItemPage from '../components/men/men-item-page.vue'
 import vWomenItemPage from '../components/women/women-item-page.vue'
 import vSuperItemPage from '../components/super/super-item-page.vue'
+import vPageForItems from '../components/page-for-items.vue'
 
 
 Vue.use(Router);
@@ -32,7 +33,7 @@ let router = new Router({
             path:'/kids/:id',
             name: 'kids-item',
             component: vKidsItemPage
-        },
+        },      
         {
             path:'/men',
             name: 'men',
@@ -42,7 +43,7 @@ let router = new Router({
             path:'/men/:id',
             name: 'men-item',
             component: vMenItemPage
-        },
+        }, 
         {
             path:'/women',
             name: 'women',
@@ -52,7 +53,7 @@ let router = new Router({
             path:'/women/:id',
             name: 'women-item',
             component: vWomenItemPage
-        },
+        }, 
         {
             path:'/super',
             name: 'super',
@@ -62,23 +63,28 @@ let router = new Router({
             path:'/super/:id',
             name: 'super-item',
             component: vSuperItemPage
-        },
+        }, 
         {
             path:'/badges',
             name: 'badges',
             component: vBadges
         },
-        {
+         {
             path:'/badges/:id',
-            name: 'badges-item',
+            name: 'badges-item-page',
             component: vBadgesItemPage
-        },
+        }, 
+        {
+            path:'/products/:id',
+            name: 'page-for-items',
+            component: vPageForItems
+        }, 
         {
             path:'/busket',
             name: 'busket',
             component: vBusket,
             props: true
-        }
+        },
     ],
 })
 

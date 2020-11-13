@@ -329,7 +329,7 @@
         "type" : "super",
         "name": "Фрукты",
         "price": 230,
-        "article": "W1",
+        "article": "S1",
         "available": true,
         "category": "Мужские"
       },
@@ -338,7 +338,7 @@
         "type" : "super",
         "name": "Начосы",
         "price": 210,
-        "article": "W2",
+        "article": "S2",
         "available": true,
         "category": "Мужские"
       },
@@ -347,7 +347,7 @@
         "type" : "super",
         "name": "Фламинго",
         "price": 300,
-        "article": "W3",
+        "article": "S3",
         "available": false,
         "category": "Мужские"
       },
@@ -356,7 +356,7 @@
         "type" : "super",
         "name": "Ссыкун",
         "price": 400,
-        "article": "W4",
+        "article": "S4",
         "available": true,
         "category": "Мужские"
       },
@@ -365,7 +365,7 @@
         "type" : "super",
         "name": "Авокадо",
         "price": 300,
-        "article": "W5",
+        "article": "S5",
         "available": true,
         "category": "Мужские"
       },
@@ -374,7 +374,7 @@
         "type" : "super",
         "name": "Космос",
         "price": 240,
-        "article": "W6",
+        "article": "S6",
         "available": false,
         "category": "Мужские"
       },
@@ -383,7 +383,7 @@
         "type" : "super",
         "name": "ЯЖМАТЬ",
         "price": 300,
-        "article": "W7",
+        "article": "S7",
         "available": true,
         "category": "Мужские"
       },
@@ -392,7 +392,7 @@
         "type" : "super",
         "name": "Петучи",
         "price": 240,
-        "article": "W8",
+        "article": "S8",
         "available": true,
         "category": "Мужские"
       },
@@ -401,7 +401,7 @@
         "type" : "super",
         "name": "Арбуз",
         "price": 270,
-        "article": "W9",
+        "article": "S9",
         "available": false,
         "category": "Мужские"
       },
@@ -410,7 +410,7 @@
         "type" : "super",
         "name": "Винца хочется",
         "price": 400,
-        "article": "W10",
+        "article": "S10",
         "available": true,
         "category": "Мужские"
       },
@@ -419,7 +419,7 @@
         "type" : "super",
         "name": "Панды",
         "price": 270,
-        "article": "W11",
+        "article": "S11",
         "available": true,
         "category": "Мужские"
       },
@@ -428,7 +428,7 @@
         "type" : "super",
         "name": "Конопля",
         "price": 300,
-        "article": "W12",
+        "article": "S12",
         "available": true,
         "category": "Мужские"
       },

@@ -20,7 +20,7 @@
       <button @click = 'kidsDeleteFilters'>Удалить все фильтры</button>
     </div>
     </div>
-    <div class="kid-list" v-if="kidsUnder <= 300">
+    <div class="kid-list" v-if="changeUpUnder">
         <kids-item
           v-for = "product in changeProductsName"
           :key = "product.article"
@@ -28,7 +28,7 @@
           @addToCart = 'addToCart'>
           </kids-item>
     </div>
-    <div v-if="kidsUnder > 300" class="kid-noitem">
+    <div v-else class="kid-noitem">
       <p>Товары не найдены...</p>
     </div>
 </div>
@@ -59,6 +59,13 @@ export default {
           return this.PRODUCTSKIDS
           console.log('PRODUCTSKIDS')
         }
+      },
+      changeUpUnder() {
+          if (this.kidsUnder <= 300 && this.kidsUpUnder == false) {
+          return true
+        } else {
+          return false
+        }
       }
     },
     methods: {
@@ -70,6 +77,10 @@ export default {
          'GET_PRODUCTS'
       ]),
       kidsPrice() {
+        this.kidsUpUnder = false
+        if (this.kidsUnder == '' && this.kidsUp =='') {
+           this.kidsProducts = this.PRODUCTSKIDS
+        } else
         if (this.kidsUnder == '' && this.kidsUp !='') {
            this.kidsProducts = this.PRODUCTSKIDS.filter(item => (item.price >= 0 && item.price <= this.kidsUp))
         } else
@@ -82,12 +93,14 @@ export default {
         } else {
         this.kidsProducts = this.PRODUCTSKIDS.filter(item => (item.price >= this.kidsUnder && item.price <= this.kidsUp))
       }
+      if (!this.kidsProducts.length) {this.kidsUpUnder = true}
       },
       kidsDeleteFilters() {
         this.kidsFilter = ''
         this.kidsUnder = ''
         this.kidsUp = ''
         this.kidsProducts = this.PRODUCTSKIDS
+        this.kidsUpUnder = false
       }
         },
     data() {
@@ -95,7 +108,8 @@ export default {
           kidsFilter: '',
           kidsUnder: '',
           kidsUp: '',
-          kidsProducts: []
+          kidsProducts: [],
+          kidsUpUnder: false
         }
     },
     watch: {

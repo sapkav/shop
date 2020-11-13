@@ -1,13 +1,17 @@
-<template>
-  <div class="women-item">
-    <img :src="'../img/women/' + product_data.image" alt="img" class="women-item-image">
-    <h3 class="women-item-number">Носки: {{product_data.name}}</h3>
-    <p class="women-item-price">Цена: {{product_data.price}}р</p>
-    <button class="women-item-button btn"
-    @click = "addToCart">
+<template> 
+<router-link :to="`/products/${product_data.article}`" tag = "div" class="women1" v-bind:class="{'women1-sale': !product_data.available}">
+<div class = "men1-item">
+    <img :src="'../img/women/' + product_data.image" alt="img" class="women1-item-image">
+    <h3 class="women1-item-number">Носки: {{product_data.name}}</h3>
+    <p class="women1-item-price" v-show="product_data.available">Цена: {{product_data.price}}р</p>
+    <p class="women1-sale-price" v-show="!product_data.available">Нет в наличии ({{product_data.price}}р)</p>
+   <!-- <button class="women1-item-button btn"
+    @click = "addToCart"
+    :disabled = "!product_data.available">
     Добавить в корзину
-    </button>
+    </button> -->
 </div>
+    </router-link>
 </template>
 
 <script>
@@ -16,7 +20,7 @@ export default {
     methods: {
         addToCart() {
             this.$emit('addToCart', this.product_data)
-        }
+        },
     },
     mounted() {
         this.$set(this.product_data, 'quantity', 1)
@@ -31,31 +35,45 @@ export default {
     },
     data() {
         return {
-
+              classObject: {
+                  'women-item': true
+              }
         }
+    },
+ computed: {
     }
 }
 </script>
 
 <style lang="scss">
-.women-item {
-    background-color: white;
+.women1 {
+    cursor: pointer;
+    margin-bottom: 20px;
     border: 1px solid white;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    padding: 30px;
-    min-width: 80%;
+        &-sale {
+        border: 3px solid red;
+
+        &-price {
+            font-size: 20px;
+            color: rgb(255, 0, 0);
+            font-weight: 700;
+        }
+    }
+
+&-item {
     text-align: center;
-    margin-bottom: 30px;
+    background-color: rgb(241, 241, 241);
+    padding-bottom: 20px;
+    
+    &-price {
+        font-size: 20px;
+    }
 
     &-image {
-        width: 150px;  
-        height: 170px;
+        width: 100%;
+        height: 250px;
     }
-
-    .btn {
-        border: none;
-        box-shadow: 0 0 5px rgba(0,0,0,0.5);
-        border-radius: 2px;
-    }
+}
 }
 </style>

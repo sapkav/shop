@@ -1,5 +1,5 @@
 <template> 
-<router-link :to="`/kids/${product_data.article}`" tag = "div" class="kids" v-bind:class="{'kids-sale': !product_data.available}">
+<router-link :to="`/products/${product_data.article}`" tag = "div" class="kids" v-bind:class="{'kids-sale': !product_data.available}">
 <div class = "kids-item">
     <img :src="'../img/kids/' + product_data.image" alt="img" class="kids-item-image">
     <h3 class="kids-item-number">Носки: {{product_data.name}}</h3>
@@ -21,9 +21,6 @@ export default {
         addToCart() {
             this.$emit('addToCart', this.product_data)
         },
-                goDetail() {
-              this.$router.push({name:'kids-item'})
-        }
     },
     mounted() {
         this.$set(this.product_data, 'quantity', 1)
@@ -39,7 +36,7 @@ export default {
     data() {
         return {
               classObject: {
-                  'kids-item': true
+                  'men-item': true
               }
         }
     },
@@ -50,11 +47,12 @@ export default {
 
 <style lang="scss">
 .kids {
+    cursor: pointer;
     margin-bottom: 20px;
     border: 1px solid white;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
         &-sale {
-        border: 2px solid red;
+        border: 3px solid red;
 
         &-price {
             font-size: 20px;

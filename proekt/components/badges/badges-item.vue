@@ -1,10 +1,10 @@
 <template> 
-<router-link :to="`/badges/${product_data.article}`" tag = "div" class="badges" v-bind:class="{'badges-sale': !product_data.available}">
-<div class = "badges-item">
-    <img :src="'../img/badges/' + product_data.image" alt="img" class="badges-item-image">
-    <h3 class="badges-item-number">Носки: {{product_data.name}}</h3>
-    <p class="badges-item-price" v-show="product_data.available">Цена: {{product_data.price}}р</p>
-    <p class="badges-sale-price" v-show="!product_data.available">Нет в наличии ({{product_data.price}}р)</p>
+<router-link :to="`/products/${product_data.article}`" tag = "div" class="badges1" v-bind:class="{'badges1-sale': !product_data.available}">
+<div class = "badges1-item">
+    <img :src="'../img/badges/' + product_data.image" alt="img" class="badges1-item-image">
+    <h3 class="badges1-item-number">Носки: {{product_data.name}}</h3>
+    <p class="badges1-item-price" v-show="product_data.available">Цена: {{product_data.price}}р</p>
+    <p class="badges1-sale-price" v-show="!product_data.available">Нет в наличии ({{product_data.price}}р)</p>
    <!-- <button class="badges-item-button btn"
     @click = "addToCart"
     :disabled = "!product_data.available">
@@ -21,9 +21,6 @@ export default {
         addToCart() {
             this.$emit('addToCart', this.product_data)
         },
-                goDetail() {
-              this.$router.push({name:'badges-item'})
-        }
     },
     mounted() {
         this.$set(this.product_data, 'quantity', 1)
@@ -39,7 +36,7 @@ export default {
     data() {
         return {
               classObject: {
-                  'badges-item': true
+                  'badges1-item': true
               }
         }
     },
@@ -49,12 +46,13 @@ export default {
 </script>
 
 <style lang="scss">
-.badges {
+.badges1 {
+    cursor: pointer;
     margin-bottom: 20px;
     border: 1px solid white;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
         &-sale {
-        border: 2px solid red;
+        border: 3px solid red;
 
         &-price {
             font-size: 20px;

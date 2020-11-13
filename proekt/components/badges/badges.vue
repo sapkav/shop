@@ -20,7 +20,7 @@
       <button @click = 'badgesDeleteFilters'>Удалить все фильтры</button>
     </div>
     </div>
-    <div class="badges-list" v-if="badgesUnder <= 500">
+    <div class="badges-list" v-if="changeUpUnder">
         <badges-item
           v-for = "product in changeProductsName"
           :key = "product.article"
@@ -28,7 +28,7 @@
           @addToCart = 'addToCart'>
           </badges-item>
     </div>
-    <div v-if="badgesUnder > 500" class="badges-noitem">
+    <div v-else class="badges-noitem">
       <p>Товары не найдены...</p>
     </div>
 </div>
@@ -59,6 +59,13 @@ export default {
           return this.PRODUCTSBADGES
           console.log('PRODUCTSBADGES')
         }
+      },
+      changeUpUnder() {
+        if (this.badgesUnder <= 500 && this.badgesUpUnder == false) {
+          return true
+        } else {
+          return false
+        }
       }
     },
     methods: {
@@ -70,6 +77,10 @@ export default {
          'GET_PRODUCTS'
       ]),
        badgesPrice() {
+         this.badgesUpUnder = false
+        if (this.badgesUnder == '' && this.badgesUp =='') {
+           this.badgesProducts = this.PRODUCTSBADGES
+        } else
         if (this.badgesUnder == '' && this.badgesUp !='') {
            this.badgesProducts = this.PRODUCTSBADGES.filter(item => (item.price >= 0 && item.price <= this.badgesUp))
         } else
@@ -82,12 +93,14 @@ export default {
         } else {
         this.badgesProducts = this.PRODUCTSBADGES.filter(item => (item.price >= this.badgesUnder && item.price <= this.badgesUp))
       }
+      if (!this.badgesProducts.length) {this.badgesUpUnder = true}
       },
       badgesDeleteFilters() {
         this.badgesFilter = ''
         this.badgesUnder = ''
         this.badgesUp = ''
         this.badgesProducts = this.PRODUCTSBADGES
+        this.badgesUpUnder = false
       }
         },
     data() {
@@ -95,7 +108,8 @@ export default {
           badgesFilter: '',
           badgesUnder: '',
           badgesUp: '',
-          badgesProducts: []
+          badgesProducts: [],
+          badgesUpUnder: false
         }
     },
     watch: {

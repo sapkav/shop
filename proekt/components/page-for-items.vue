@@ -13,8 +13,9 @@
     <ul>
       <li v-for = "(item, index) in productItem.details" :key = "index">{{item}}</li>
     </ul>
-    <button v-if="buttonCardAdd" @click="addToBusket">Добавить в корзину</button>
-    <p v-else class="page-for-items-item-details-config-notbusket">Товара нет в наличии </p>
+    <button v-if="buttonCardAdd && !productItem.busketHasProduct" @click="addToBusket">Добавить в корзину</button>
+    <p v-else-if = "!buttonCardAdd" class="page-for-items-item-details-config-notbusket">Товара нет в наличии </p>
+    <p v-else class="page-for-items-item-details-config-notbusket">Товар уже в корзине</p>
     </div>
     </div>
     <div class="page-for-items-item-busket">
@@ -76,14 +77,14 @@ name: 'page-for-items',
        this.productItem = item
      }
    }
-    }
+    } 
  },
   updated() {
    for (let item of Object.values(this.PRODUCTS)) {
      if (item.article == this.$route.params.id) {
        this.productItem = item
      }
-   }
+   }  
  },
   /* created() {
       for (let item of Object.values(this.PRODUCTS)) {

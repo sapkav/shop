@@ -24,8 +24,7 @@
         <women-item
           v-for = "product in changeProductsName"
           :key = "product.article"
-          :product_data="product"
-          @addToCart = 'addToCart'>
+          :product_data="product">
           </women-item>
     </div>
     <div v-else class="women-noitem">
@@ -69,9 +68,6 @@ export default {
       }
     },
     methods: {
-      addToCart(data) {
-        this.ADD_TO_BUSKET(data)
-      },
       ...mapActions([
          'ADD_TO_BUSKET',
          'GET_PRODUCTS'

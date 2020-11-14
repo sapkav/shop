@@ -5,11 +5,6 @@
     <h3 class="kids-item-number">Носки: {{product_data.name}}</h3>
     <p class="kids-item-price" v-show="product_data.available">Цена: {{product_data.price}}р</p>
     <p class="kids-sale-price" v-show="!product_data.available">Нет в наличии ({{product_data.price}}р)</p>
-   <!-- <button class="kids-item-button btn"
-    @click = "addToCart"
-    :disabled = "!product_data.available">
-    Добавить в корзину
-    </button> -->
 </div>
     </router-link>
 </template>

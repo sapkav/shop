@@ -24,8 +24,7 @@
         <badges-item
           v-for = "product in changeProductsName"
           :key = "product.article"
-          :product_data="product"
-          @addToCart = 'addToCart'>
+          :product_data="product">
           </badges-item>
     </div>
     <div v-else class="badges-noitem">

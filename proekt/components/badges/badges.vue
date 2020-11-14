@@ -69,9 +69,6 @@ export default {
       }
     },
     methods: {
-      addToCart(data) {
-        this.ADD_TO_BUSKET(data)
-      },
       ...mapActions([
          'ADD_TO_BUSKET',
          'GET_PRODUCTS'

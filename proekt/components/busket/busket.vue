@@ -1,10 +1,11 @@
 <template> 
 <div class="busket">
+    <button class="busket-button" @click = "clearTheBusket">ОЧИСТИТЬ КОРЗИНУ</button>
     <h3 class="busket-title">Корзина</h3>
-    <p v-if = "!busket_data.length" class="busket-subtitle">Корзина пустая уф....</p>
+    <p v-if = "!BUSKET.length" class="busket-subtitle">Корзина пустая уф....</p>
     <div class="busket-links">
    <busket-item
-   v-for = "(busket_item,index) in busket_data"
+   v-for = "(busket_item,index) in BUSKET"
    :key = "busket_item.article"
     :busket_item_data="busket_item"
     @deleteBusket = "deleteFromBusket(index)"
@@ -22,7 +23,7 @@
 
 <script>
 import busketItem from './busket-item.vue'
-import {mapActions} from 'vuex'
+import {mapActions, mapGetters} from 'vuex'
 
 
 export default { 
@@ -42,7 +43,8 @@ export default {
         ...mapActions([
             'DELETE_FROM_BUSKET',
             'DECREMENT_ITEM',
-            'INCREMENT_ITEM'
+            'INCREMENT_ITEM',
+            'DELETE_ALL_FROM_BUSKET'
         ]),
         deleteFromBusket(index) {
             this.DELETE_FROM_BUSKET(index)
@@ -53,11 +55,19 @@ export default {
         decrement(index) {
             this.DECREMENT_ITEM(index)
         },
+        clearTheBusket() {
+            this.DELETE_ALL_FROM_BUSKET()
+        }
     },
     computed: {
         totalCost() {
-       return this.busket_data.reduce((sum, item) => sum + item.quantity * item.price ,0)
-     }
+       return this.BUSKET.reduce((sum, item) => sum + item.quantity * item.price ,0)
+     },
+    ...mapGetters([
+        'PRODUCTS',
+        'ISPRODUCT',
+        'BUSKET'
+      ]), 
     },
     data() {
         return {
@@ -69,6 +79,16 @@ export default {
 <style lang = "scss">
 .busket {
     margin-bottom: 100px;
+
+    &-button {
+        position: absolute;
+        left: 50px;
+        width: 200px;
+        border-radius: 8px;
+        background-color: black;
+        color: white;
+        padding: 5px 15px;
+    }
 
     &-title {
         text-align: center;

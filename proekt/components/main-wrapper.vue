@@ -14,7 +14,7 @@
              </nav>
          </div>
         <div class="main-wrapper-header-logo">
-            <router-link :to="{ name: 'busket', params: { busket_data: BUSKET }}"><img src="img/shop.png" alt="" width="25">
+            <router-link :to="{ name: 'busket'}"><img src="img/shop.png" alt="" width="25">
              <span>{{BUSKET.length}}</span>
              </router-link>
          </div>

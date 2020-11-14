@@ -16,5 +16,8 @@ export default {
    },
    GET_PRODUCTSMEN({commit}) {
     commit('SET_PRODUCTSMEN')
-   }
+   },
+   DELETE_ALL_FROM_BUSKET({commit}) {
+    commit('REMOVE_ALL_FROM_BUSKET')
+},
 }

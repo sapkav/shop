@@ -44,6 +44,9 @@ export default {
             state.busket[index].quantity--;
         }
     },
+    REMOVE_ALL_FROM_BUSKET: (state) => {
+        state.busket = []
+    }
     /* SET_PRODUCTSKIDS: (state) => {
         for (let i = 0; i < state.products.length ; i++) {
             if (state.products[i].type == 'kids') {

@@ -2,7 +2,7 @@
  <div class = "main-wrapper">  
      <div class = "main-wrapper-header">
          <div class="main-wrapper-header-logo">
-             <nav><router-link to="/">logo</router-link></nav>
+             <nav><router-link to="/"><img src="img/logo.jpg" alt="" width="30"></router-link></nav>
          </div>
          <div class="main-wrapper-header-links">
              <nav>
@@ -14,7 +14,7 @@
              </nav>
          </div>
         <div class="main-wrapper-header-logo">
-            <router-link :to="{ name: 'busket'}"><img src="img/shop.png" alt="" width="25">
+            <router-link :to="{ name: 'busket'}" tag="a"><img src="img/shop.png" alt="" width="25">
              <span>{{BUSKET.length}}</span>
              </router-link>
          </div>
@@ -75,6 +75,15 @@ computed: {
 
             &-link {
                 padding-right: 20px;
+            }
+        }
+
+        &-logo {
+            align-self: center;
+            font-size: 22px;
+
+            a {
+                text-decoration: none;
             }
         }
     }

@@ -13,7 +13,7 @@
     <ul>
       <li v-for = "(item, index) in productItem.details" :key = "index">{{item}}</li>
     </ul>
-    <button v-if="buttonCardAdd && !productItem.busketHasProduct" @click="addToBusket">Добавить в корзину</button>
+    <button v-if="buttonCardAdd && !busketHasItem" @click="addToBusket">Добавить в корзину</button>
     <p v-else-if = "!buttonCardAdd" class="page-for-items-item-details-config-notbusket">Товара нет в наличии </p>
     <p v-else class="page-for-items-item-details-config-notbusket">Товар уже в корзине</p>
     </div>
@@ -22,7 +22,9 @@
       <h2>Корзина</h2>
       <p>Количество товаров: {{BUSKET.length}}</p>
       <p>Общая сумма: {{totalProductsCost}}</p>
-      <router-link :to="{ name: 'busket'}"><button>Перейти к корзине</button></router-link>
+      <router-link :to="{ name: 'busket'}"
+       class="page-for-items-item-busket-btn"
+       tag="span"><button>Перейти к корзине</button></router-link>
     </div>
     </div>
   </div>
@@ -59,6 +61,13 @@ name: 'page-for-items',
       },
       totalProductsCost() {
        return this.BUSKET.reduce((sum, item) => sum + item.quantity * item.price ,0)
+     },
+     busketHasItem() {
+       if (this.productItem.quantity > 0) {
+         return true
+       } else {
+         return false
+       }
      }
  },
  mounted() {
@@ -77,7 +86,7 @@ name: 'page-for-items',
        this.productItem = item
      }
    }
-    } 
+    }  
  },
   updated() {
    for (let item of Object.values(this.PRODUCTS)) {
@@ -108,6 +117,7 @@ name: 'page-for-items',
 
 <style lang="scss">
 .page-for-items {
+
   h1 {
     text-align: center;
     padding-bottom: 20px;
@@ -126,12 +136,13 @@ name: 'page-for-items',
     &-img {
       height: 600px;
       width: 100%;
+
       img {
         height: 100%;  
         width: 100%;
       }
     }
-
+    
     &-config {
       display: grid;
       grid-template-rows: 1fr 1fr 1fr 3fr 1fr;
@@ -157,7 +168,6 @@ name: 'page-for-items',
         border-radius: 10px;
         height: 70%;
         border: none;
-
       }
 
       &-notbusket {
@@ -165,9 +175,9 @@ name: 'page-for-items',
         font-size: 30px;
         font-weight: 700;
       }
-
     }
  }
+
   &-busket {
     cursor: pointer;
     justify-self: center;
@@ -184,9 +194,17 @@ name: 'page-for-items',
           padding-left: 20px;
         }
 
-        button {
-            width: 60%;
-            margin: 0 auto;
+        &-btn {
+          display: grid;
+          justify-content: center;
+          padding-bottom: 20px;
+
+          button {
+            background-color: black;
+            color: white;
+            padding: 7px 15px;
+            border-radius: 10px;
+          }
         }
   }
 }

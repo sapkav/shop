@@ -33,7 +33,7 @@ export default {
        methods: {
       deleteFromBusket() {
         this.$emit('deleteBusket');
-        this.$set(this.busket_item_data, 'quantity', 1)
+        this.$set(this.busket_item_data, 'quantity', 0)
       },
       decrement() {
         this.$emit('decrement')

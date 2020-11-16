@@ -17,12 +17,8 @@
 export default { 
     name: 'men-item',
     methods: {
-        addToCart() {
-            this.$emit('addToCart', this.product_data)
-        },
     },
-    mounted() {
-        this.$set(this.product_data, 'quantity', 1)      
+    mounted() {     
     },
     props: {
             product_data: {

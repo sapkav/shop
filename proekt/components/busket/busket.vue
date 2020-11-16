@@ -1,6 +1,7 @@
 <template> 
 <div class="busket">
     <button class="busket-button" @click = "clearTheBusket">ОЧИСТИТЬ КОРЗИНУ</button>
+    <button @click="$router.go(-1)" class="busket-back">ВЕРНУТЬСЯ НАЗАД</button>
     <h3 class="busket-title">Корзина</h3>
     <p v-if = "!BUSKET.length" class="busket-subtitle">Корзина пустая уф....</p>
     <div class="busket-links">
@@ -83,6 +84,16 @@ export default {
     &-button {
         position: absolute;
         left: 50px;
+        width: 200px;
+        border-radius: 8px;
+        background-color: black;
+        color: white;
+        padding: 5px 15px;
+    }
+
+    &-back {
+        position: absolute;
+        right: 50px;
         width: 200px;
         border-radius: 8px;
         background-color: black;

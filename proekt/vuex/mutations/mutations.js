@@ -46,6 +46,11 @@ export default {
     },
     REMOVE_ALL_FROM_BUSKET: (state) => {
         state.busket = []
+        for (let item of state.products) {
+            if (item.quantity > 0) {
+                item.quantity = 0
+            }
+        }
     }
     /* SET_PRODUCTSKIDS: (state) => {
         for (let i = 0; i < state.products.length ; i++) {

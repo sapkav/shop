@@ -2,7 +2,7 @@
 <router-link :to="`/products/${product_data.article}`" tag = "div" class="badges1" v-bind:class="{'badges1-sale': !product_data.available}">
 <div class = "badges1-item">
     <img :src="'../img/badges/' + product_data.image" alt="img" class="badges1-item-image">
-    <h3 class="badges1-item-number">Носки: {{product_data.name}}</h3>
+    <h3 class="badges1-item-number">Значок: {{product_data.name}}</h3>
     <p class="badges1-item-price" v-show="product_data.available">Цена: {{product_data.price}}р</p>
     <p class="badges1-sale-price" v-show="!product_data.available">Нет в наличии ({{product_data.price}}р)</p>
 </div>

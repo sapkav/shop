@@ -12,9 +12,9 @@
     <div class="women-filters-inputs">
       <span>Ценовая категория</span>
       <span>От</span>
-      <input type="text" name="womenUnder" id="" @blur="womenPrice" v-model.number="womenUnder" placeholder="0">
+      <input type="text" name="womenUnder" @blur="womenPrice" v-model.number="womenUnder" placeholder="0">
       <span>До</span>
-      <input type="text" name="womenUp" id="" @blur="womenPrice" v-model.number="womenUp" placeholder="10000">
+      <input type="text" name="womenUp" @blur="womenPrice" v-model.number="womenUp" placeholder="10000">
     </div>
     <div class="women-filters-checkbox">
       <button @click = 'womenDeleteFilters'>Удалить все фильтры</button>

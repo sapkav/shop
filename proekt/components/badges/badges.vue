@@ -12,9 +12,9 @@
     <div class="badges-filters-inputs">
       <span>Ценовая категория</span>
       <span>От</span>
-      <input type="text" name="badgesUnder" id="" @blur="badgesPrice" v-model.number="badgesUnder" placeholder="0">
+      <input type="text" name="badgesUnder" @blur="badgesPrice" v-model.number="badgesUnder" placeholder="0">
       <span>До</span>
-      <input type="text" name="badgesUp" id="" @blur="badgesPrice" v-model.number="badgesUp" placeholder="10000">
+      <input type="text" name="badgesUp" @blur="badgesPrice" v-model.number="badgesUp" placeholder="10000">
     </div>
     <div class="badges-filters-checkbox">
       <button @click = 'badgesDeleteFilters'>Удалить все фильтры</button>

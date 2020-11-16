@@ -12,9 +12,9 @@
     <div class="super-filters-inputs">
       <span>Ценовая категория</span>
       <span>От</span>
-      <input type="text" name="superUnder" id="" @blur="superPrice" v-model.number="superUnder" placeholder="0">
+      <input type="text" name="superUnder" @blur="superPrice" v-model.number="superUnder" placeholder="0">
       <span>До</span>
-      <input type="text" name="superUp" id="" @blur="superPrice" v-model.number="superUp" placeholder="10000">
+      <input type="text" name="superUp" @blur="superPrice" v-model.number="superUp" placeholder="10000">
     </div>
     <div class="super-filters-checkbox">
       <button @click = 'superDeleteFilters'>Удалить все фильтры</button>
